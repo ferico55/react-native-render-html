@@ -93,7 +93,7 @@ export function ul (htmlAttribs, children, convertedCSSStyles, passProps = {}) {
                 );
             } else if (rawChild.parentTag === 'ol') {
                 prefix = listsPrefixesRenderers && listsPrefixesRenderers.ol ? listsPrefixesRenderers.ol(...rendererArgs) : (
-                    <Text style={{ marginRight: 5, fontSize: baseFontSize }}>{ index + 1 })</Text>
+                    <Text style={{ marginRight: 5, fontSize: baseFontSize, color: baseFontStyle.color }}>{ index + 1 })</Text>
                 );
             }
         }
